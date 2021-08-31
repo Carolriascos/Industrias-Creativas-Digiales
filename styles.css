@@ -1,0 +1,270 @@
+
+body {
+  margin: 0%;
+  padding: 0%;
+  background-image: url("../img/fondo\ pagina.jpg");
+  background-repeat: no-repeat;
+background-size: cover;
+}  
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.titulo {font-family: 'Crete Round', serif;
+}
+.texto {
+  text-align: center;
+  margin-left: 5%;
+}
+
+.parrafo{
+  position: absolute;
+  top: 108%;
+  left: 5%;
+  right: 5%;
+  color:#fff;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+
+.parrafo {
+  font-family: "Courgette", cursive;
+background-color: #EBDC25;
+color:black;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background: #EBDC25;
+  color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.contenedor{
+width: 98%;
+margin: auto;
+}
+#nav-bar {
+  display: none;
+}
+header label {
+  float: right;
+  font-size: 28px;
+  margin: 6px 0;
+  cursor: pointer;
+}
+h1 {
+  float: left;
+}
+header .contenedor {
+  display: table;
+}
+.menu {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(51, 51, 51, 0.9);
+  top: 50px;
+  left: 0;
+  transition: all 0.5s;
+  transform: translateX(-100%);
+}
+#nav-bar:checked ~ .menu {
+  transform: translateX(0%);
+}
+.lista-menu li {
+  display: inline;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.lista-menu li a {
+  display: block;
+  color:#fff;
+  height: 50px;
+  text-decoration: none;
+  padding: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.lista-menu li a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+section {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+#banner {
+  margin-top: 50px;
+  position: relative;
+  width: 100vw;
+}
+#banner img {
+  width: 100%;
+  height: 100%;
+}
+#banner .contenedor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color:#fff;
+}
+#banner h2 {
+  font-size: 25px;
+}
+#banner a {
+  display: block;
+  width: 100px;
+  color:#fff;
+  text-decoration: none;
+  padding: 7px;
+  margin-top: 10px;
+  border: 3px solid #fff;
+}
+#banner a:hover {
+  background: rgba(51, 51, 51, 0.8);
+}
+#bienvenidos {
+  text-align: center;
+}
+
+#blog .contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+#blog article {
+  margin: 15px;
+}
+#blog img {
+  width: 100%;
+  max-width: 280px;
+}
+#blog h3,
+h4 {
+  text-align: left;
+  margin-left: 15%;
+}
+.color{
+  color: #fff;
+}
+
+.colorcito{
+  color: #fff;
+}
+
+.letra{
+  color: #fff;
+}
+
+#info {
+  background: #EBDC25;
+  color: #000;
+  text-align: center;
+  padding: 20px;
+  justify-content: center;
+}
+#info .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.info-pet {
+  margin: 20px;
+}
+.info-pet img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 7px solid rgb(30, 26, 240);
+}
+footer .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 25px;
+  color: #fff;
+}
+
+.copy {
+  font-size: 20px;
+}
+.sociales {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+}
+.foto img {
+  width: 300px;
+  height: 200px;
+}
+
+.sociales a {
+  color:white;
+  text-decoration: none;
+}
+
+.info-pet {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+
+@media (min-width: 1024px) {
+  .menu {
+    position: static;
+    width: auto;
+    height: auto;
+    transform: translateX(0%);
+    float: right;
+    display: flex;
+  }
+  header label {
+    display: none;
+  }
+
+  .lista-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contenedor {
+    width: 1000px;
+  }
+  #banner img {
+    margin-top: 1px !important;
+    height: 500px;
+    width: 1500px;
+  }
+}
+@media (min-width: 480px) {
+  #banner h2 {
+    font-size: 50px;
+  }
+  #banner a {
+    margin-top: 25px;
+  }
+/* Alto imagen */
+@media (min-width: 768px) {
+  #banner {
+    height: 500px;
+    width: 1300px;
+    background-position: center;
+    overflow: hidden;
+  }
+  #banner img {
+    height: auto;
+    margin-top: -100px;
+  }
+ }
